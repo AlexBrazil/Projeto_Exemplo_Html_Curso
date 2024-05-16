@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Aspect Ratio 16:9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="aspectRatioBox">
+        <button id="fullscreenBtn" onclick="toggleFullScreen()">
+            <img src="./img/enter_fullscreen.png" alt="Enter fullscreen" id="fullscreenIcon">
+        </button>
+        <div class="painel_cadastro">
+            <div class="title_form">
+                CADASTRO
+            </div>
+            <div class="body_form">
+                <div class="campo">
+                    <label class="item_label item_label_1" for="nome_completo">Nome Completo:</label>
+                    <input class="item_input item_input_1" type="text" id="nome_completo" name="nome_completo" placeholder="Nome Completo" required>
+                </div>
+                <div class="campo">
+                    <label class="item_label item_label_2" for="email">Email:</label>
+                    <input class="item_input item_input_2" type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="campo">
+                    <label class="item_label item_label_3" for="senha">Senha:</label>
+                    <input class="item_input item_input_3" type="password" id="senha" name="senha" placeholder="Senha" required>
+                </div>
+            </div>
+            <div class="footer_form">
+                <button type="submit" id="enviar">Enviar Dados</button>
+            </div>
+        </div>
+        <div id="orientation">Orientação atual será exibida aqui.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

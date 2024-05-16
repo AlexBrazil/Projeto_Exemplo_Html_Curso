@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SuperMarioBros";
+    src: url('./fonts/SuperMarioBros.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#aspectRatioBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #929695;
+    position: absolute; 
+}
+
+.painel_cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 75%;
+    height: 75%;
+    background-image: url('./img/back_exerc1.jpg');
+    background-size: cover;
+    border: groove 0.5em rgb(6, 92, 3);
+    border-radius: 0.5em;
+    font-family: "SuperMarioBros";
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+}
+
+.title_form{
+    /* border: 2px solid rgb(255, 0, 0); */
+} 
+
+.body_form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: clamp(25%, 50%, 50%);
+    justify-content:space-evenly;
+    align-items:flex-start;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.footer_form{
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+#enviar {
+    padding: 1vw 1.5vh; 
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor em forma de ponteiro para indicar que é clicável */
+    font-size: 1vw; /* Tamanho da fonte */
+    display: flex; /* Usa flexbox para alinhar o ícone e o texto */
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: clamp(15%, 20%, 20%);
+    gap: clamp(0.3vh,1vh,1vh);
+    /* border: 2px solid rgb(4, 0, 255); */
+}
+
+.item_label{
+    font-size: 1.3vw;
+    color: rgb(245, 171, 11);
+}
+
+.item_input{
+    background-color: bisque;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.item_label_1{
+    flex-grow: 0;
+}
+.item_input_1{
+    flex-grow: 1;
+}
+.item_label_2{
+    flex-grow: 0;
+}
+.item_input_2{
+    flex-grow: 1;
+}
+.item_label_3{
+    flex-grow: 0;
+}
+.item_input_3{
+    flex-grow: 1;
+}
+
+
+#fullscreenBtn {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#fullscreenBtn img {
+    width: 64px;
+    height: 64px;
+}
